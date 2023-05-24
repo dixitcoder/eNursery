@@ -2,10 +2,11 @@
     <div>
         <vue-route />
         <input type="text" v-model="name" placeholder="Enter Name"><br><br>
-        <input type="text" v-model="email" placeholder="Enter Email"/><br><br>
+        <input type="text" v-model="username" placeholder="Enter Email"/><br><br>
         <input type="text" v-model="password" placeholder="password"/><br><br>
         <!-- <input type="number" v-model="number" placeholder="Number"/><br><br> -->
         <button @click="SignUp">Sing Up</button>
+        <!-- <button style="color:wheat">loin Vue JS pag</button> -->
     </div>
     </template>
     <script>
@@ -15,7 +16,7 @@
         data() {
             return {
                 name:'dixit',
-                email:'dixit@gmail.com',
+                username:'dixit@gmail.com',
                 password:'849746',
                 
             }
@@ -24,7 +25,7 @@
             SignUp(){
                 console.log('SignUp',this.name,this.email,this.password)
                 let result = axios.post ("http://localhost:3000/register",{
-                    email:this.email,
+                    username:this.username,
                     name:this.name,
                     password:this.password
                 });

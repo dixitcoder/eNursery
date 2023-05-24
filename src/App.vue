@@ -1,9 +1,19 @@
 <template>
   <div id="app">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> ""
-      <!-- <router-link to="/pro">profile</router-link> -->
+      <div class="tabs is-right">
+        <ul>
+          <li class="is-active"><a>Pictures</a></li>
+          <li><a href="@/assets/download.jpeg">Music</a></li>
+          <li><a>Videos</a></li>
+          <li><a>Documents</a></li>
+        </ul>
+      </div>
+      <h2> Vue JS Login Page </h2>
+      <!-- <router-link to="/register">login</router-link>  |  
+      <router-link to="/login">register</router-link> |
+      -->
     </nav>
     <router-view/>
   </div>
