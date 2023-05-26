@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma-rtl.min.css">
+    <h2 class="logins">Login Nursery</h2>
     <img src="@/assets/logo.png" alt=""><br>
     <input type="text" v-model="username"> <br><br>
     <input type="text" v-model="password"> <br><br>
@@ -8,9 +9,9 @@
      <button class="button is-primary" @click="login">
       login   
     </button> 
-    <button class="button is-primary"> 
-      <router-link to="/login">register</router-link> 
-    </button>
+    <!-- <button class="button is-primary">  -->
+      <!-- <router-link to="/register">register</router-link>  -->
+    <!-- </button> -->
     <h2 id="fail"></h2>
   </div>
   </div>
@@ -35,7 +36,7 @@ export default {
     if
     (username==this.username && password==this.password)
     {
-      let route = this.$router.resolve({ path: "/profile" });
+      let route = this.$router.push({ path: "/profile"});
       window.open(route.href,'_self ');
       // let router = './profile.vue'
       // let route = t({ path: "../components/SignUp.vue" });
@@ -49,6 +50,11 @@ export default {
 }
 </script>
 <style>
+.logins{
+  font-size: 30px;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .h2 {
   color:black;
   display: block;

@@ -4,15 +4,13 @@
     <nav>
       <div class="tabs is-right">
         <ul>
-          <li class="is-active"><a>Pictures</a></li>
-          <li><a href="@/assets/download.jpeg">Music</a></li>
-          <li><a>Videos</a></li>
-          <li><a>Documents</a></li>
+          <li class="is-active"><a><router-link to="/login">Login</router-link></a></li>
+          <li class="is-active"><a><router-link to="/register">register</router-link></a></li>
         </ul>
       </div>
-      <h2> Vue JS Login Page </h2>
-      <!-- <router-link to="/register">login</router-link>  |  
-      <router-link to="/login">register</router-link> |
+      <!-- <h2> Vue JS Login Page </h2> -->
+       <!-- <router-link to="/register">login</router-link>  |   -->
+      <!-- <router-link to="/Nursery">login</router-link> 
       -->
     </nav>
     <router-view/>

@@ -4,7 +4,7 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
     <br><br>
-    <button> <router-link to="/register">login</router-link></button>
+    <!-- <button> <router-link to="/login">login</router-link></button> -->
   </div>
 </template>
 
@@ -14,7 +14,7 @@
 import HelloWorld from '@/components/SignUp.vue'
 
 export default {
-  name: 'HomeView',
+  name: 'RegisterVue',
   components: {
     // Login,
     HelloWorld

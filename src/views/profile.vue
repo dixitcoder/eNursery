@@ -1,15 +1,15 @@
 <template>
     <body>
         <div >
-            <h2 >My profile </h2>
+            <!-- <h2 >My profile </h2> -->
             <img src="../assets/photo-1511367461989-f85a21fda167.jpeg" alt="">
-            <button><router-link to="/register">login</router-link></button>
+            <!-- <button><router-link to="/login">login</router-link></button> -->
         </div>  
     </body>
 </template>
 <script>
     export default {
-        name:'HomeVi'
+        name:'HomeVue'
     }
 </script>
 <style>
